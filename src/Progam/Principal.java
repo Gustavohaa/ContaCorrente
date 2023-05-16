@@ -7,7 +7,9 @@ import java.util.ArrayList;
 public class Principal {
     public static void main(String[] args) {
 
-        ContaCorrente conta = new ContaCorrente("Gustavo", "1234567890", "senha");
+        ContaCorrente conta = new ContaCorrente("Gustavo", "123.456.789-98", "senha");
+        
+        System.out.println(conta.toString());
 
         conta.depositar(500.0);
         System.out.println("Depósito realizado. Saldo atual: " + conta.getSaldo());
